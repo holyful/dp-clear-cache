@@ -1,0 +1,6 @@
+{
+	"environments": {
+		"release":"http://cat.dianpingoa.com",
+		"prelease": "http://ppe.cat.dp"
+	}
+}

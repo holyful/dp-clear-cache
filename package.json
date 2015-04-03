@@ -1,0 +1,32 @@
+{
+  "name": "dp-clear-cache",
+  "version": "0.0.1",
+  "description": "清缓存",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyful/dp-clear-cache.git"
+  },
+  "author": "holyful",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holyful/dp-clear-cache/issues"
+  },
+  "homepage": "https://github.com/holyful/dp-clear-cache",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "cheerio": "^0.19.0",
+    "cli": "^0.6.6",
+    "config": "^1.12.0",
+    "q": "^1.2.0",
+    "superagent": "^1.1.0",
+    "underscore": "^1.8.2",
+    "underscore.string": "^3.0.3"
+  },
+  "bin": {
+    "dpcc": "./bin/dpcc.js"
+  }
+}
