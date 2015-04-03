@@ -2,5 +2,6 @@
 	"environments": {
 		"release":"http://cat.dianpingoa.com",
 		"prelease": "http://ppe.cat.dp"
-	}
+	},
+	"code": "http://code.dianpingoa.com"
 }
