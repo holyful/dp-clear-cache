@@ -16,7 +16,11 @@ $ npm install dp-clear-cache -g
 以下参数缺一不可
 
 ```bash
-$ dpcc -a <web集群名称，如tuangou-web> -e <环境，prelease或者release> -c <gitlab的private key，下文会具体说在那里拿> -p <静态应用的名称，如app-m-refund>
+$ dpcc 
+	-a <web集群名称，如tuangou-web> 
+	-e <环境，prelease或者release> 
+	-c <gitlab的private key，下文会具体说在那里拿> 
+	-p <静态应用的名称，如app-m-refund>
 ```
 
 可以查看帮助
@@ -31,9 +35,8 @@ Options:
   -a, --domain STRING    Target web app
   -e, --env STRING       Environment, prelease or release
   -c, --credential STRINGPrivate key of gitlab, check your gitlab account page 
-  -p, --project STRING   static project name
-  -k, --no-color         Omit color from output
-      --debug            Show debug information
+  -p, --project STRING   Project name from gitlab
+  -g, --group [STRING]   Project group from gitlab (Default is f2e)
   -v, --version          Display the current version
   -h, --help             Display help and usage details
 ```
