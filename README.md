@@ -22,7 +22,7 @@ $ dpcc -a <web集群名称，如tuangou-web> -e <环境，prelease或者release>
 可以查看帮助
 
 ```bash
-# dpcc -h 
+$ dpcc -h 
 
 Usage:
   dpcc [OPTIONS] [ARGS]
