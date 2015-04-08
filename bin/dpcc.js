@@ -8,8 +8,11 @@ var request = require('superagent');
 var config = require('config');
 var _ = require('underscore');
 var s = require('underscore.string')
-var envConfig = config.get('environments');
-var codeConfig = config.get('code');
+var envConfig = {
+	"release":"http://cat.dianpingoa.com",
+	"prelease": "http://ppe.cat.dp"
+};
+var codeConfig = "http://code.dianpingoa.com";
 var chalk = require('chalk');
 var cli = require('cli').enable('version','help');
 var domain = "";
@@ -19,6 +22,8 @@ var project = "";
 var group = "";
 
 process.env.INIT_CWD = process.cwd();
+
+
 cli.parse({
     domain: ['a', 'Target web app','string'],
     env:  ['e', 'Environment, prelease or release','string'],
@@ -102,7 +107,6 @@ cli.main(function(args, options) {
 
 	var clearCache = function(ip){
 		var deferred = Q.defer();
-
 		request.post(codeConfig+"/"+group+"/"+project+"/cache/clear?private_token="+credential)
 			.send({ type: env, ip: ip})
 			.set('Refer', codeConfig+'/'+group+'/'+project+'/cache?private_token='+credential)
